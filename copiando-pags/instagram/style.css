@@ -171,7 +171,7 @@ header i {
 #feed {
     display: flex;
     flex-flow: column nowrap;
-    max-width: 340px;
+    max-width: 500px;
     margin: auto;
     overflow-x: auto;
 }
@@ -426,7 +426,7 @@ footer img {
     }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 610px) {
 
     header{
         position: sticky;
