@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: blueviolet;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* wrapper com a perspective */
+.scene {
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+}
+
+/* esse é o eixo que gira */
+.card-flip {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.scene:hover .card-flip {
+    transform: rotateY(180deg);
+}
+
+/* as duas faces ficam empilhadas no mesmo lugar */
+.card,
+.card2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+    box-shadow: 0 0 10px white;
+}
+
+.card {
+    background-color: white;
+}
+
+.card2 {
+    background-color: rgb(131, 52, 221);
+    transform: rotateY(180deg);
+    /* começa de costas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: rgb(211, 164, 255);
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.sorteio {
+    width: 50%;
+    text-align: center;
+    color: rgb(211, 164, 255);
+}
+
+.number>input {
+    color: rgb(211, 164, 255);
+    font-size: 5em;
+    background: none;
+    max-width: 100px;
+    border: none;
+    cursor: default;
+}
+
+.number>input:active{
+    border: none;
+    outline: none;
+}
+
+.number > input:focus {
+    border: none;
+    outline: none;
+}

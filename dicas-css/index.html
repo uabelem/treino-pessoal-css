@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dicas CSS</title>
+</head>
+
+<body>
+    <main>
+
+        <!-- BOTÃO COM HOVER DESLIZANTE ---------------------------------------->
+        <button class="btn"><span>Passe o mouse aqui</span></button>
+        <!---------------------------------------------------------------------->
+
+        <!-- FUNDO E TEXTO COM GRADIENTE --------------------------------------->
+        <div class="gradientefundo">Fundo com gradiente</div>
+        <div class="gradientetexto">Texto com gradiente</div>
+        <!---------------------------------------------------------------------->
+
+        <!-- GRID HOVER -------------------------------------------------------->
+        <div class="grid">
+            <div class="griditem">:hover</div>
+            <div class="griditem">:hover</div>
+            <div class="griditem">:not(:nth-child(3)) = Todos menos o terceiro filho</div>
+            <div class="griditem">:hover</div>
+            <div class="griditem">:hover</div>
+            <div class="griditem">:hover</div>
+        </div>
+        <!------------------------------------------------------------------------>
+
+        <!-- ROLAGEM NO EIXO X TRAVANDO EM CADA ITEM ----------------------------->
+        <div class="boxscroll">
+            <div class="scroll">scroll-snap-type: x mandatory;</div>
+            <div class="scroll">Exemplo</div>
+            <div class="scroll">Exemplo</div>
+            <div class="scroll">Exemplo</div>
+            <div class="scroll">Exemplo</div>
+        </div>
+        <!------------------------------------------------------------------------>
+
+        <!-- ROLAGEM NO EIXO Y POR PROXIMIDADE ----------------------------------->
+        <div class="boxscroll2">
+            <div class="scroll2">scroll-snap-type: y proximity;</div>
+            <div class="scroll2">Exemplo</div>
+            <div class="scroll2">Exemplo</div>
+            <div class="scroll2">Exemplo</div>
+            <div class="scroll2">Exemplo</div>
+        </div>
+        <!------------------------------------------------------------------------>
+
+        <!-- FORMULÁRIO COM FOCUS E HAS ------------------------------------------>
+        <h2>:focus-within + :has</h2>
+        <div class="focus-container">
+            <form action="#">
+                <div><input type="email" name="email" id="iemail" placeholder="email" required></div>
+                <div><input type="password" name="senha" id="isenha" placeholder="senha" required></div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+        <!------------------------------------------------------------------------>
+
+        <!-- BACKGROUND-CLIP ----------------------------------------------------->
+        <h2>background-clip:</h2>
+        <div class="clips">
+            <div class="clip1">border-box</div>
+            <div class="clip2">padding-box</div>
+            <div class="clip3">content-box</div>
+        </div>
+        <!------------------------------------------------------------------------>
+        
+        <!-- RESIZE -------------------------------------------------------------->
+        <h2>resize:</h2>
+        <div class="resize">
+            resize: both + overflow: auto
+        </div>
+        <!------------------------------------------------------------------------>
+
+        <!-- TOOLTIP PERSONALIZADO ----------------------------------------------->
+        <h2>Tooltip personalizado</h2>
+        <div class="tooltip-container">
+            <button class="tooltip-btn">Olhe aqui</button>
+            <span class="tooltip-text">Hello World! kk</span>
+        </div>
+        <!------------------------------------------------------------------------>
+
+        <!-- CHECKBOX PERSONALIZADA----------------------------------------------->
+        <h2>Custom Checkbox</h2>
+        <div class="check">
+            <label class="custom-checkbox">Checkbox1
+                <input type="checkbox" name="">
+                <span class="checkbox-mark"></span>
+            </label>
+            <label class="custom-checkbox">Checkbox2
+                <input type="checkbox" name="">
+                <span class="checkbox-mark"></span>
+            </label>
+        </div>
+        <!------------------------------------------------------------------------>
+
+        <!-- IMAGEM COM DESCRIÇÃO NO HOVER --------------------------------------->
+        <h2>Imagem:hover = descrição</h2>
+        <div class="image-container">
+            <img src="https://www.greenpeace.org/static/planet4-brasil-stateless/2018/07/pinguim-de-barbicha2.jpg"
+                alt="">
+            <div class="image-overlay">
+                <h3>Titulo da imagem</h3>
+                <p>descrição breve sobre a imagem</p>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------>
+
+        <!-- SWITCH PERSONALIZADO ------------------------------------------------->
+        <h2>Switch Persinalizado</h2>
+        <label class="switch">
+            <input type="checkbox" name="switch">
+            <span class="slider"></span>
+        </label>
+
+        <!------------------------------------------------------------------------>
+
+        <!-- BOTÃO DE NOTIFICAÇÃO ------------------------------------------------>
+        <h2>Botâo de notificação</h2>
+        <button class="notificacao-btn">
+            <i class="fa-regular fa-bell"></i>
+            <span class="notificacao-num">5</span>
+        </button>
+        <!------------------------------------------------------------------------>
+
+        <!-- LOADING ------------------------------------------------------------->
+        <h2>Carregando...</h2>
+        <div class="loading"></div>
+        <!------------------------------------------------------------------------>
+
+    </main>
+    <script src="https://kit.fontawesome.com/2ea558199f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
