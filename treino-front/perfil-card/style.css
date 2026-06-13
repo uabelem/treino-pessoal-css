@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(197, 151, 240);
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body,
+input,
+button {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.card{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.banner{
+    background-color: blueviolet;
+    width: 100%;
+    height: 20%;
+}
+
+.foto{
+    background-color: rgb(177, 0, 204);
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.redes{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
